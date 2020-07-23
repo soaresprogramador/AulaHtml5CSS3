@@ -5,13 +5,95 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: aquamarine;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+header {
+    height: 100vh;
+    /*coluna*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #barraSuperior {
-    background-color: antiquewhite;
+    background-color: #f3fbec;
+    position: fixed;
     width: 100vw;
     top: 0;
-    display: block;
+    z-index: 1;
+}
+
+#barraSuperior a{
+        /*controlar padding*/
+        display: block;
+        /*aumentar área de clique*/
+        padding: 10px 20px;
+        /*raio da bordar*/
+        border-radius: 10px;
+}
+
+#barraSuperior a:active,
+#barraSuperior a:hover {
+    /*inversão de cor e trasicao de retorno*/
+    background-color: midnightblue;
+    color: #f3fbec;
+    transition: background-color 0.5s, color 0.7s;    
+}
+
+#barraSuperior ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#barraSuperior li {
+    list-style: none;
+}
+
+a {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+    color: #0c1a46;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#resumo,
+#contato {
+    padding: 1em;
+    font-size: 1em;
+}
+
+
+
+
+
+
+#contato .icons {
+    text-align: center;
+    color:#0e76a8;
+    font-size: 5em;
+    padding: 20px;
+    transition: text-shadow 200ms;
+}
+
+#contato a:active,
+#contato a:hover {
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgba(25, 25, 112, 0.8);
+}
+
+footer{
+    text-align: center;
 }
